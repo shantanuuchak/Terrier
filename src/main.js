@@ -52,7 +52,7 @@ async function renderCarousel(breed) {
     div.innerHTML = `<img
               src="${images[i]}"
               class="d-block w-100 rounded-3"
-              alt="..."
+              alt="${breed}"
             />`;
     carouselContainerEl.appendChild(div);
   }

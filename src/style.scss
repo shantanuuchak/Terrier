@@ -10,3 +10,9 @@ body {
   font-family: "Teachers", sans-serif;
   color: white;
 }
+
+@media screen and (min-width: 700px) {
+  .carousel-item {
+    width: 50% !important;
+  }
+}
