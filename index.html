@@ -13,10 +13,10 @@
   </head>
   <body>
     <main class="container mt-5">
-      <h1 class="fs-5">Terrier &mdash; The Dogs API Project</h1>
+      <h1 class="fs-2 mb-3">Terrier &mdash; The Dogs API Project</h1>
 
       <!-- Select -->
-      <div class="form-floating">
+      <div class="form-floating mb-3">
         <select
           class="form-select"
           aria-label="Select dog breed"
@@ -27,6 +27,40 @@
         </select>
         <label for="dogs-breed">Select Breed</label>
       </div>
+
+      <!-- Carousel -->
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide w-100 mb-3"
+        data-bs-ride="carousel"
+      >
+        <!-- Carousel Container -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://placehold.co/400"
+              class="d-block w-100 rounded-3"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://placehold.co/401"
+              class="d-block w-100 rounded-3"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://placehold.co/402"
+              class="d-block w-100 rounded-3"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+
+      <p class="lead">Wait for images to slide</p>
     </main>
 
     <!-- Scripts -->
