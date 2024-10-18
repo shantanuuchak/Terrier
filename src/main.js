@@ -45,6 +45,7 @@ async function renderCarousel(breed) {
   carouselContainerEl.innerHTML = "";
   const images = await getDogImages(breed);
 
+  //   Add active to just the first item
   for (let i = 0; i < images.length; i++) {
     const div = document.createElement("div");
     div.classList.add("carousel-item", i === 0 && "active");
@@ -61,3 +62,5 @@ async function renderCarousel(breed) {
 selectEl.addEventListener("change", function (e) {
   renderCarousel(e.target.value);
 });
+
+renderCarousel("affenpinscher");
