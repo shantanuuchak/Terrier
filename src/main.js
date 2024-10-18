@@ -42,8 +42,19 @@ async function renderOptions() {
 renderOptions();
 
 async function renderCarousel(breed) {
+  carouselContainerEl.innerHTML = "";
   const images = await getDogImages(breed);
-  console.log(images);
+
+  for (let i = 0; i < images.length; i++) {
+    const div = document.createElement("div");
+    div.classList.add("carousel-item", i === 0 && "active");
+    div.innerHTML = `<img
+              src="${images[i]}"
+              class="d-block w-100 rounded-3"
+              alt="..."
+            />`;
+    carouselContainerEl.appendChild(div);
+  }
 }
 
 // This runs on select change
